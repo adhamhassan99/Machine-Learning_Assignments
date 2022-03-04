@@ -7,6 +7,7 @@ my_data = pd.read_csv("C:\\Users\Adham\\Documents\\Machine Learning\\Machine-Lea
 # print(my_data.head())
 
 def GUC_Distance(Cluster_Centroids, Data_points, Distance_Type):
+    
     pass
 
 def GUC_Kmean ( Data_points, Number_of_Clusters,  Distance_Type ):

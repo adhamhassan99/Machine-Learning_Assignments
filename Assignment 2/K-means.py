@@ -5,22 +5,23 @@ import pandas as pd, seaborn as sns, matplotlib.pyplot as plt
 from sklearn.datasets import make_blobs
 from sklearn.datasets import make_moons
 
-my_data = pd.read_csv("C:\\Users\Adham\\Documents\\Machine Learning\\Machine-Learning_Assignments\\Assignment 1\\Customer data.csv")
+my_data = pd.read_csv("C:\\Users\\adham\\Documents\\MachineLearning\\Machine-Learning_Assignments\\Assignment 2\\Customer data.csv")
 # print(my_data.head())
 
 def GUC_Distance ( Cluster_Centroids, Data_points, Distance_Type ):
 ## write code here for the Distance function here #
     
     Cluster_Distance=[]
-    if Distance_Type=="Ecluidian distance":
-        for point in Data_points:
-            row=[]
-            for centroid in Cluster_Centroids:
-                x=(point-centroid)^2
-                x=math.sqrt(Cluster_Distance)
-            row.append(x)
-            Cluster_Distance.append(row)
-                
+    # if Distance_Type=="Ecluidian distance":
+    #     for point in Data_points:
+    #         row=[]
+    #         for centroid in Cluster_Centroids:
+    #             x=(point-centroid)^2
+    #             x=math.sqrt(Cluster_Distance)
+    #         row.append(x)
+    #         Cluster_Distance.append(row)
+    # else:
+    #     pass            
 
     return Cluster_Distance 
 
